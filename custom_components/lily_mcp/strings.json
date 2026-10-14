@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect a Xiaozhi agent",
+        "description": "Gives the agent a few simple tools (list devices, turn on, turn off, get state, set temperature) for the devices picked below.",
+        "data": {
+          "name": "Name",
+          "endpoint": "MCP endpoint",
+          "entities": "Devices"
+        },
+        "data_description": {
+          "endpoint": "From xiaozhi.me: Agent -> Configure -> Extensions -> MCP Endpoint. Looks like wss://api.xiaozhi.me/mcp/?token=... Keep it secret.",
+          "entities": "Only these devices can be seen or controlled by voice. Fewer devices means fewer wrong picks."
+        }
+      }
+    },
+    "error": {
+      "invalid_endpoint": "Must be a ws:// or wss:// address containing token=.",
+      "no_entities": "Pick at least one device."
+    },
+    "abort": {
+      "already_configured": "This agent is already connected."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Lily MCP settings",
+        "data": {
+          "endpoint": "MCP endpoint",
+          "entities": "Devices"
+        },
+        "data_description": {
+          "endpoint": "From xiaozhi.me: Agent -> Configure -> Extensions -> MCP Endpoint.",
+          "entities": "Only these devices can be seen or controlled by voice."
+        }
+      }
+    },
+    "error": {
+      "invalid_endpoint": "Must be a ws:// or wss:// address containing token=.",
+      "no_entities": "Pick at least one device."
+    }
+  }
+}

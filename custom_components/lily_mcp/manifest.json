@@ -1,0 +1,14 @@
+{
+  "domain": "lily_mcp",
+  "name": "Lily MCP",
+  "codeowners": [
+    "@lipnguyen"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/lipnguyen-ha/ha-lily-mcp",
+  "integration_type": "service",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/lipnguyen-ha/ha-lily-mcp/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

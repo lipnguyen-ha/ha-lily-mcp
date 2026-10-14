@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ket noi agent Xiaozhi",
+        "description": "Cho agent vai cong cu don gian (liet ke thiet bi, bat, tat, xem trang thai, dat nhiet do) voi cac thiet bi chon ben duoi.",
+        "data": {
+          "name": "Ten",
+          "endpoint": "MCP endpoint",
+          "entities": "Thiet bi"
+        },
+        "data_description": {
+          "endpoint": "Lay tren xiaozhi.me: Agent -> Configure -> Extensions -> MCP Endpoint. Dang wss://api.xiaozhi.me/mcp/?token=... Giu bi mat.",
+          "entities": "Chi cac thiet bi nay moi xem va dieu khien duoc bang giong noi. Cang it thiet bi thi cang it chon nham."
+        }
+      }
+    },
+    "error": {
+      "invalid_endpoint": "Phai la dia chi ws:// hoac wss:// co token=.",
+      "no_entities": "Chon it nhat mot thiet bi."
+    },
+    "abort": {
+      "already_configured": "Agent nay da duoc ket noi roi."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Cai dat Lily MCP",
+        "data": {
+          "endpoint": "MCP endpoint",
+          "entities": "Thiet bi"
+        },
+        "data_description": {
+          "endpoint": "Lay tren xiaozhi.me: Agent -> Configure -> Extensions -> MCP Endpoint.",
+          "entities": "Chi cac thiet bi nay moi xem va dieu khien duoc bang giong noi."
+        }
+      }
+    },
+    "error": {
+      "invalid_endpoint": "Phai la dia chi ws:// hoac wss:// co token=.",
+      "no_entities": "Chon it nhat mot thiet bi."
+    }
+  }
+}
