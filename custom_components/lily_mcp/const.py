@@ -25,7 +25,7 @@ SUPPORTED_DOMAINS = [
 READ_ONLY_DOMAINS = {"sensor", "binary_sensor"}
 
 SERVER_NAME = "lily-mcp"
-SERVER_VERSION = "1.0.0"
+SERVER_VERSION = "1.0.1"
 # Used when the client does not say which MCP revision it speaks.
 DEFAULT_PROTOCOL_VERSION = "2024-11-05"
 

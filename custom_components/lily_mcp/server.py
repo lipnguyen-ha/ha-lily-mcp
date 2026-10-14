@@ -173,8 +173,9 @@ class LilyMcpServer:
 
     def _aliases(self, entity_id: str) -> list[str]:
         entry = er.async_get(self.hass).async_get(entity_id)
-        # Newer cores may keep a None placeholder in aliases; skip it.
-        return sorted(a for a in entry.aliases if a) if entry else []
+        # Newer cores keep a ComputedNameType placeholder ("use the entity
+        # name") among the aliases; only real strings are aliases.
+        return sorted(a for a in entry.aliases if isinstance(a, str) and a) if entry else []
 
     @staticmethod
     def _name(state: State) -> str:
